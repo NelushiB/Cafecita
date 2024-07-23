@@ -120,7 +120,6 @@ header {
 
 .sticky {
    background-color: var(--black);
-   opacity: 0.9;
 }
 
 .menu li {
@@ -147,13 +146,16 @@ header {
    width: 100%;
 }
 
+.burger {
+   cursor: pointer;
+}
+
 span.icon-bar {
    display: block;
    width: 25px;
    height: 3px;
    margin: 5px;
    background-color: var(--white);
-   cursor: pointer;
    display: none;
 }
 
@@ -570,7 +572,7 @@ footer.spacer {
    opacity: 0.6;
 }
 
-.menu .col-6 {
+.menu-price .col-6 {
    z-index: 99;
    padding: 2rem 3rem;
 }
@@ -940,12 +942,21 @@ input[type="email"] {
 @media only screen and (max-width: 768px){ 
    .col-3,
    .col-4,
-   .details-section .col-4 {
+   .details-section .col-4,
+   .menu-price .col-6 {
       width: 100%;
+   }
+
+   .header {
+      padding: 1.4rem 3.5rem;
    }
 
    .content {
       padding: 0 3.5rem;
+   }
+
+   .row {
+      flex-direction: column;
    }
 
    h1 {
@@ -975,7 +986,34 @@ input[type="email"] {
    }
 
    span.icon-bar {
-      display: none;
+      display: block;
+   }
+
+   .menu {
+      width: 60%;
+      height: 100vh;
+      background: var(--black);
+      opacity: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99999;
+      padding: 50px 30px;
+      transition: all 0.3s;
+      transform: translateX(-100%);
+   }
+
+   .menu li {
+      display: block;
+      line-height: 60px;
+   }
+
+   .wide {
+      transform: translateX(0);
+   }
+
+   .menu li::after {
+      content: none;
    }
 
    .images {
@@ -1007,7 +1045,7 @@ input[type="email"] {
       width: 100%;
    }
 
-   .menu .col-6 {
+   .menu-price .col-6 {
       padding: 1rem 0;
    }
 
@@ -1035,7 +1073,7 @@ input[type="email"] {
    }
 
    h1 {
-      font-size: 40px;
+      font-size: 37px;
    }
 
    h2 {
@@ -1048,6 +1086,10 @@ input[type="email"] {
 
    p {
       font-size: 16px;
+   }
+
+   .hero h2 {
+      font-size: 20px;
    }
 
    .text h2 {
