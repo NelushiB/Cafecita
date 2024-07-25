@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
    const menu = document.querySelector('.menu');
    const sticky = header.offsetTop;
    const faqs = document.querySelectorAll('.faq');
+   const addCommentButton = document.querySelector('#submit');
+   const commentInput = document.querySelector('#comment');
+   const nameInput = document.querySelector('#name');
+   const emailInput = document.querySelector('#email');
+   const commentList = document.querySelector('ul#comment-list');
+   const singleComment = document.querySelector('.single-comment');
+   
+   
 
    //Burger Button
    burger.addEventListener('click', () => { menu.classList.toggle('wide')});
@@ -24,5 +32,55 @@ document.addEventListener('DOMContentLoaded', () => {
       });
    });
 
+   let commentCount = 0
+
+   // Add a new comment
+   addCommentButton.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      if(commentInput != '' || nameInput != '' || emailInput != '') {
+      
+      const name = nameInput.value.trim();
+      const comment = commentInput.value.trim();
+
+      commentCount ++
+      const newComment = document.createElement('li');
+      newComment.id = `comment-${commentCount}`;
+
+      //Format Date
+      const date = new Date();
+      let formattedDate = date.toLocaleDateString('en-GB', {
+         year: 'numeric',
+         month: 'numeric',
+         day: 'numeric'
+      }).replace(/\//g, '-');;
+
+      
+      newComment.innerHTML = `
+      <div class="single-comment">
+         <div class="comment-text">
+            <div class="user-img">
+               <img src="img/user1.jpg" alt="User 1" width="100" height="100">
+            </div>
+            <div class="comment">
+               <div class="title-date">
+                  <h4>${name}</h4>
+                  <p>${formattedDate}</p>
+               </div>
+               <p>${comment}</p>
+            </div>
+         </div>
+         <div class="reply-comment">
+            <span class="reply-link">Reply <i class="fa-solid fa-reply"></i></span>
+         </div>
+      </div>
+      `;
+      commentList.appendChild(newComment);
+
+      nameInput.value = '';
+      commentInput.value = '';
+      emailInput.value = '';
+      };
+   });
 })
 

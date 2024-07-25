@@ -858,15 +858,24 @@ input#search {
    width: 72%;
 }
 
-.single-page .col-4 {
+.single-page aside .col-4 {
    width: 28%;
+}
+
+.drop-cap {
+   font-size: 3rem;
+   font-weight: 400;
+   float: left;
+   line-height: 1;
+   padding-right: 0.1em;
 }
 
 .mini-section {
    padding: 15px 0;
 }
 
-.mini-section h3 {
+.mini-section h3,
+.comment-section h3 {
    text-transform: uppercase;
    padding-bottom: 10px;
 }
@@ -874,6 +883,10 @@ input#search {
 .mini-section p {
    padding-bottom: 10px;
    text-align: justify;
+}
+
+.mini-section .col-4 {
+   padding-right: 10px;
 }
 
 ol > li {
@@ -886,7 +899,7 @@ ol > li {
 
 .quote {
    text-align: center;
-   padding: 20px 0;
+   padding: 20px 10px;
    border-left: 1px solid var(--black);
    border-right: 1px solid var(--black);
    margin: 60px 0;
@@ -900,34 +913,96 @@ ol > li {
    justify-content: center;
 }
 
-.line {
-   border-bottom: 1px solid var(--secondary);
-   margin: 40px 0 12px;
-}
-
 .tags-share {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   border-top: 1px solid #eee;
+   border-bottom: 1px solid #eee;
+   padding: 10px;
+   margin: 40px 0 12px;
 }
 
 .tags-share a {
-   color: #3a3a3a;
+   color: #222;
+   font-size: 12px;
+   text-transform: uppercase;
 }
 
 .tags-share a:hover {
    color: var(--primary);
 }
 
-.tag h4 {
-   text-transform: uppercase;
-   font-size: 16px;
-   padding-right: 5px;
-   padding-bottom: 0;
+.tag li {
+   font-size: 12px;
+   display: inline-block;
 }
 
-.tag li {
-   display: inline-block;
+.comment-section {
+   padding-top: 60px;
+}
+
+.comment-form .row{
+   gap: 5px;
+}
+
+.comment-list {
+   padding-top: 40px;
+}
+
+.single-comment {
+   margin-top: 30px;
+   border-bottom: 1px solid #eee;
+}
+
+ul.children {
+   margin-top: 30px;
+   padding-left: 60px;
+}
+
+
+.single-comment {
+   padding: 20px 10px;
+}
+
+.comment-text {
+   display: flex;
+}
+
+.comment-text p {
+   font-size: 16px;
+}
+
+.user-img img{
+   max-width: none;
+   border-radius: 100%;
+   margin-right: 20px;
+   object-fit: cover;
+}
+
+.title-date {
+   display: flex;
+   align-items: center;
+}
+
+.title-date p {
+   font-size: 13px;
+}
+
+.title-date h4 {
+   padding-bottom: 0;
+   margin-right: 10px;
+}
+
+.reply-comment {
+   text-align: right;
+   padding: 10px 0;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.reply-comment:hover {
+   color: var(--primary);
 }
 
 /*** CONTACT ***/
@@ -965,6 +1040,7 @@ textarea {
    border-radius: 5px;
    padding: 8px;
    margin-bottom: 20px;
+   width: 100%;
 }
 
 textarea {
@@ -972,7 +1048,9 @@ textarea {
 }
 
 input[type="submit"] {
-   background: var(--primary);
+   border: 1px solid var(--black);
+   background: var(--black);
+   color: var(--white);
    width: 100%;
    padding: 12px;
    transition: .3s;
@@ -987,6 +1065,7 @@ input[type="submit"]:hover {
 
 input[type="email"] {
    margin-right: 10px;
+
 }
 
 .privacy label {
@@ -1110,6 +1189,10 @@ input[type="email"] {
       padding: 0 10px;
    }
 
+   .quote {
+      font-size: 25px;
+      padding: 20px;
+   }
 }
 
 @media only screen and (max-width: 768px){ 
@@ -1118,7 +1201,9 @@ input[type="email"] {
    .details-section .col-4,
    .menu-price .col-6,
    .col-8,
-   .contact .col-6 {
+   .contact .col-6,
+   .single-page .col-8,
+   .comment-form .col-6 {
       width: 100%;
    }
 
@@ -1297,6 +1382,40 @@ input[type="email"] {
       padding-top: 20px;
    }
 
+   /** SINGLE PAGE **/
+   .mini-section .col-4 {
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .comment-text,
+   .title-date {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .comment-text p {
+      font-size: 14px;
+   }
+
+   .title-date {
+      padding-top: 20px;
+   }
+
+   .title-date p {
+      font-size: 12px;
+   }
+
+   .title-date h4 {
+      font-size: 16px;
+   }
+
+   ul.children {
+      padding-left: 40px;
+   }
+
 }
 
 @media only screen and (max-width: 480px){
@@ -1449,6 +1568,10 @@ input[type="email"] {
 
    .form {
       padding: 20px;
+   }
+
+   .article-category a {
+      font-size: 12px;
    }
 }
 
