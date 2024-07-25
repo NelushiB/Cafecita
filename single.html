@@ -129,10 +129,10 @@
                   </div><!--end share-->
                </div><!--end tags-share-->
                <div class="comment-section">
-                  <h3>Leave a reply</h3>
-                  <p>Your email address will not be published. Required fields are marked *</p>
-                  <form action="" id="comment-form">
-                     <div class="comment-form">
+                  <div class="comment-form">
+                     <h3>Leave a reply</h3>
+                     <p>Your email address will not be published. Required fields are marked *</p>
+                     <form action="" id="comment-form">
                         <div class="textarea">
                            <textarea name="comment" id="comment" cols="45" rows="10" placeholder="Your Comment*"></textarea>
                         </div>
@@ -144,12 +144,12 @@
                               <input type="email" name="email" id="email" placeholder="Your Email*">
                            </div>
                         </div>
-                        <input type="submit" value="Post Comment" id="submit">
-                     </div>
-                  </form>
+                        <input type="submit" value="Post Comment" class="submit">
+                     </form>
+                  </div>
                   <div class="comment-list">
                      <ul id="comment-list">
-                        <li>
+                        <li id="comment-0">
                            <div class="single-comment">
                               <div class="comment-text">
                                  <div class="user-img">
@@ -168,22 +168,25 @@
                               </div>
                            </div>
                            <ul class="children">
-                              <div class="single-comment">
-                                 <div class="comment-text">
-                                    <div class="user-img">
-                                       <img src="img/nelushi.jpeg" alt="Img Profile" width="100" height="100">
-                                    </div>
-                                    <div class="comment">
-                                       <div class="title-date">
-                                          <h4>Reply from Nelushi B. (author)</h4>
-                                          <p>15-06-2024</p>
+                              <li>                              
+                                 <div class="single-comment">
+                                    <div class="comment-text">
+                                       <div class="user-img">
+                                          <img src="img/nelushi.jpeg" alt="Img Profile" width="100" height="100">
                                        </div>
-                                    <p>Thank you, Luca! We're thrilled to hear you enjoyed the article. Coffee indeed has a rich history and cultural significance around the world. We're glad we could share these fascinating stories with you. Stay tuned for more articles on coffee culture and history!</p>
-                                    </div><!--end comment-->
-                                 </div><!--end comment-text-->
-                                 <div class="reply-comment">
-                                    <span class="reply-link">Reply <i class="fa-solid fa-reply"></i></span>
-                                 </div>
+                                       <div class="comment">
+                                          <div class="title-date">
+                                             <h4>Reply from Nelushi B. (author)</h4>
+                                             <p>15-06-2024</p>
+                                          </div>
+                                       <p>Thank you, Luca! We're thrilled to hear you enjoyed the article. Coffee indeed has a rich history and cultural significance around the world. We're glad we could share these fascinating stories with you. Stay tuned for more articles on coffee culture and history!</p>
+                                       </div><!--end comment-->
+                                    </div><!--end comment-text-->
+                                    <div class="reply-comment">
+                                       <span class="reply-link">Reply <i class="fa-solid fa-reply"></i></span>
+                                    </div><!--end reply-link-->
+                                 </div><!--end single-comment-->
+                              </li>
                            </ul>
                         </li>
                      </ul>

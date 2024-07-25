@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
    const menu = document.querySelector('.menu');
    const sticky = header.offsetTop;
    const faqs = document.querySelectorAll('.faq');
-   const addCommentButton = document.querySelector('#submit');
+   const addCommentButton = document.querySelector('.submit');
    const commentInput = document.querySelector('#comment');
    const nameInput = document.querySelector('#name');
    const emailInput = document.querySelector('#email');
    const commentList = document.querySelector('ul#comment-list');
    const singleComment = document.querySelector('.single-comment');
-   
+   const commentForm = document.querySelector('.comment-form')
    
 
    //Burger Button
@@ -82,5 +82,42 @@ document.addEventListener('DOMContentLoaded', () => {
       emailInput.value = '';
       };
    });
+
+   const replyButtons = commentList.querySelectorAll('.reply-link');
+
+   replyButtons.forEach((replyButton) => {
+      replyButton.addEventListener('click', (e) => {
+         const comment = e.target.closest('li');
+         const nameUser = comment.querySelector('h4');
+         const childrenContainer = comment.querySelector('.children');
+         childrenContainer.appendChild(commentForm);
+         
+         const h3 = childrenContainer.querySelector('h3');
+         
+         h3.textContent = `Reply to ${nameUser.textContent}`;
+      })
+   })
+
+
+  /*commentList.addEventListener('click', (e) => {
+      let target = e.target;
+      
+      if(target.tagName = 'span') {
+         const comment = e.target.closest('li');
+         const nameUser = comment.querySelector('h4');
+
+         console.log(nameUser);
+
+         // Display the reply form
+         const childrenContainer = comment.querySelector('.children');
+         childrenContainer.appendChild(commentForm);
+         
+         const h3 = childrenContainer.querySelector('h3');
+         
+         h3.textContent = `Reply to ${nameUser.textContent}`;
+      }
+
+      
+   })*/
 })
 

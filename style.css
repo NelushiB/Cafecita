@@ -942,6 +942,10 @@ ol > li {
    padding-top: 60px;
 }
 
+.comment-form {
+   padding-top: 20px;
+}
+
 .comment-form .row{
    gap: 5px;
 }
