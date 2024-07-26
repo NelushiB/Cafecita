@@ -1577,6 +1577,12 @@ input[type="email"] {
    .article-category a {
       font-size: 12px;
    }
+
+.single-page .article {
+    padding: 0 0 6rem;  
+   }
+
+
 }
 
 
