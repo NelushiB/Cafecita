@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-   <title>Cafecito Bar</title>
+   <title>Cafecita Bar - Home</title>
 </head>
 
 <body>
@@ -38,14 +38,14 @@
                <h2>Start Your Day Right with Our Freshly Brewed Coffee, Delicious Breakfast Options, and a Cozy
                   Atmospher</h2>
                <div class="group-buttons">
-                  <a href="contact.html" class="btn">Contact us</a>
-                  <a href="menu.html" class="btn btn-2"> View Menu</a>
+                  <a href="contact.html" class="btn" role="button">Contact us</a>
+                  <a href="menu.html" class="btn btn-2" role="button"> View Menu</a>
                </div>
             </div>
          </div>
          <div class="wave">
             <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 400" version="1.1"
-               xmlns="http://www.w3.org/2000/svg">
+               xmlns="http://www.w3.org/2000/svg" role="presentation">
                <defs>
                   <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
                      <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
@@ -157,7 +157,7 @@
                         <p class="dots"></p>
                         <p class="price">2,00€</p>
                      </div>
-                     <a href="menu.html" class="btn">See more</a>
+                     <a href="menu.html" class="btn" role="button">See more</a>
                   </div>
                </div>
             </div>
@@ -171,8 +171,8 @@
             <h2>Subscribe to our Newsletter</h2>
             <p>Stay in the loop with the latest news, special promotions, and mouth-watering breakfast ideas. Subscribe now!</p>
             <div class="newsletter-input">
-               <input type="text" id="newsletter" placeholder="Your Email">
-               <a href="#" class="btn">Subscribe</a>
+               <input type="text" id="newsletter" placeholder="Your Email" aria-label="Email">
+               <a href="#" class="btn" role="button">Subscribe</a>
             </div> 
          </div>
       </div>
@@ -183,29 +183,29 @@
          <div class="section">
             <h2>Explore Our Gallery</h2>
             <div class="gallery-section">
-               <figure class="gallery__item gallery__item--1">
-                  <img src="img/image-1.jpg" class="gallery__img" alt="Image 1">
+               <figure class="gallery__item gallery__item--1" role="none">
+                  <img src="img/image-1.jpg" class="gallery__img" alt="Pouring milk into coffee">
                </figure>
-               <figure class="gallery__item gallery__item--2">
-                  <img src="img/image-2.jpg" class="gallery__img" alt="Image 2">
+               <figure class="gallery__item gallery__item--2" role="none">
+                  <img src="img/image-2.jpg" class="gallery__img" alt="Coffee and pastry with a book">
                </figure>
-               <figure class="gallery__item gallery__item--3">
-                  <img src="img/image-3.jpg" class="gallery__img" alt="Image 3">
+               <figure class="gallery__item gallery__item--3" role="none">
+                  <img src="img/image-3.jpg" class="gallery__img" alt="Waffles with berries">
                </figure>
-               <figure class="gallery__item gallery__item--4">
-                  <img src="img/image-4.jpg" class="gallery__img" alt="Image 4">
+               <figure class="gallery__item gallery__item--4" role="none">
+                  <img src="img/image-4.jpg" class="gallery__img" alt="Iced coffee with milk">
                </figure>
-               <figure class="gallery__item gallery__item--5">
-                  <img src="img/image-5.jpg" class="gallery__img" alt="Image 5">
+               <figure class="gallery__item gallery__item--5" role="none">
+                  <img src="img/image-5.jpg" class="gallery__img" alt="Coconut smoothie">
                </figure>
-               <figure class="gallery__item gallery__item--6">
-                  <img src="img/image-6.jpg" class="gallery__img" alt="Image 6">
+               <figure class="gallery__item gallery__item--6" role="none">
+                  <img src="img/image-6.jpg" class="gallery__img" alt="Coffee grounds and beans">
                </figure>
-               <figure class="gallery__item gallery__item--7">
-                  <img src="img/image-7.jpg" class="gallery__img" alt="Image 7">
+               <figure class="gallery__item gallery__item--7" role="none">
+                  <img src="img/image-7.jpg" class="gallery__img" alt="Coffee with croissants">
                </figure>
-               <figure class="gallery__item gallery__item--8">
-                  <img src="img/image-8.jpg" class="gallery__img" alt="Image 8">
+               <figure class="gallery__item gallery__item--8" role="none">
+                  <img src="img/image-8.jpg" class="gallery__img" alt="Coffee and pastries">
                </figure>
             </div>
          </div>
@@ -218,15 +218,15 @@
             <div class="details-section">
                <div class="col-4">
                   <img src="img/logo.png" alt="logo" class="logo" width="150">
-                  <p>Welcome to Cafecita, your cozy corner for delightful coffee and freshly baked pastries. Join us for a cup and experience the warmth and charm of our coffee bar.</p>
+                  <p>Welcome to Cafecita, your cozy corner for delightful coffee and freshly baked pastries. Join us for
+                     a cup and experience the warmth and charm of our coffee bar.</p>
                </div>
                <div class="col-4">
                   <div class="location">
                      <h4>Cafecita</h4>
-                        <p><span><i class="fa-solid fa-location-dot"></i></span> Via T. Grossi 2, 20121, Milano (MI)</p>
-                        <p><span><i class="fa-solid fa-phone"></i></span> <a href="tel:+3904586921753" title="telephone number">04-586921753</a></p>
-                        <p><span><i class="fa-solid fa-envelope"></i></span> <a href="mailto:infocafecita@gmail.com" title="email">infocafecita@gmail.com</a></p>
-                     </ul>
+                     <p><span><i class="fa-solid fa-location-dot" role="presentation"></i></span> Via T. Grossi 2, 20121, Milano (MI)</p>
+                     <p><span><i class="fa-solid fa-phone" role="presentation"></i></span> <a href="tel:+3904586921753" title="telephone number">04-586921753</a></p>
+                     <p><span><i class="fa-solid fa-envelope" role="presentation"></i></span> <a href="mailto:infocafecita@gmail.com" title="email">infocafecita@gmail.com</a></p>
                   </div>
                   <div class="op-hours">
                      <h4>Opening hours</h4>
@@ -238,18 +238,18 @@
                   <div class="social-media">
                      <h4>Follow us on</h4>
                      <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" aria-label="Instagram" target="_blank" role="button"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook" role="button"></i></a>
+                        <a href="#" aria-label="Linkedin"  role="button" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" aria-label="Tik Tok"  role="button"target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                      </div>
                   </div>
                   <div class="policy">
-                     <p><a href="#">Terms and Conditions</a></p>
-                     <p><a href="#">Privacy & Cookie Policy</a></p>
-                     <p><a href="#">Change Cookie Preferences</a></p>
+                     <p><a href="#" target="_blank" role="button">Terms and Conditions</a></p>
+                     <p><a href="#" target="_blank" role="button">Privacy & Cookie Policy</a></p>
+                     <p><a href="#" target="_blank" role="button">Change Cookie Preferences</a></p>
                   </div>
-               </div>  
+               </div>
             </div>
             <div class="copyright">
                <h5>All rights reserved. Copyright © 2024 Nelushi Bamunusinghe</h5>
