@@ -1617,6 +1617,16 @@ input[type="checkbox"] {
    .article-category a {
       font-size: 12px;
    }
+<<<<<<< HEAD
+=======
+
+.single-page .article {
+    padding: 0 0 6rem;  
+   }
+
+
+}
+>>>>>>> d6f70bc654203a37114749cc0140a616af9cadae
 
    .single-page .article {
       padding: 0 0 6rem;
