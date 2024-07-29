@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
    const header = document.querySelector('.header');
+   const sticky = header.offsetTop;
    const burger = document.querySelector('.burger');
    const menu = document.querySelector('.menu');
-   const sticky = header.offsetTop;
    const faqs = document.querySelectorAll('.faq');
    const addCommentButton = document.querySelector('.submit');
    const commentInput = document.querySelector('#comment');
@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
    const emailInput = document.querySelector('#email');
    const commentList = document.querySelector('ul#comment-list');
    const commentForm = document.querySelector('.comment-form');
-   const originalParent = commentForm.parentElement; 
-   const originalSibling = commentForm.nextElementSibling;
 
 
    //Burger Button
@@ -90,6 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
    commentList.addEventListener('click', (e) => {
       let target = e.target;
       const replyLink = target.closest('.reply-link');
+
+      const originalParent = commentForm.parentElement; 
+      const originalSibling = commentForm.nextElementSibling;
+
 
       if(replyLink) {
          const comment = e.target.closest('li');
