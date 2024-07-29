@@ -171,7 +171,7 @@ a:hover,
 .main {
    max-width: 100%;
    height: 100vh;
-   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3)), url('./img/hero.jpg') no-repeat center center/cover;
+   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3)), url('../img/hero.jpg') no-repeat center center/cover;
    position: relative;
 }
 
@@ -349,7 +349,7 @@ a:hover,
 
 .wrapper {
    width: 100%;
-   background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .2)), url('img/parallax.jpg') no-repeat center center/cover fixed;
+   background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .2)), url('../img/parallax.jpg') no-repeat center center/cover fixed;
 }
 
 .wrapper .section {
@@ -508,7 +508,7 @@ footer.spacer {
 }
 
 .main-about {
-   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3)), url('./img/about-hero.jpg') no-repeat center center/cover;
+   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3)), url('../img/about-hero.jpg') no-repeat center center/cover;
 }
 
 .main-page .hero {
@@ -543,11 +543,11 @@ footer.spacer {
 }
 
 .column-img {
-   background: url('./img/about-1.jpg') no-repeat center center/cover;
+   background: url('../img/about-1.jpg') no-repeat center center/cover;
 }
 
 .column-img-2 {
-   background: url('./img/about-2.jpg') no-repeat center center/cover;
+   background: url('../img/about-2.jpg') no-repeat center center/cover;
 }
 
 .column-text {
@@ -576,7 +576,7 @@ footer.spacer {
 
 /*** MENU ***/
 .main-menu {
-   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('./img/menu-hero.jpg') no-repeat center center/cover;
+   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('../img/menu-hero.jpg') no-repeat center center/cover;
 }
 .cold-beverage {
    background-color: var(--background);
@@ -626,7 +626,7 @@ footer.spacer {
 
 /*** BLOG ***/
 .main-blog {
-   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('./img/about-1.jpg') no-repeat center center/cover;
+   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('../img/about-1.jpg') no-repeat center center/cover;
 }
 
 .article {
@@ -845,7 +845,7 @@ input#search {
 
 /*** SINGLE PAGE ***/
 .main-single {
-   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('./img/image-1.jpg') no-repeat center center/cover;
+   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('../img/image-1.jpg') no-repeat center center/cover;
 }
 
 .single-page .article {
@@ -937,7 +937,7 @@ ol > li {
 }
 
 .comment-section {
-   padding-top: 60px;
+   padding-top: 40px;
 }
 
 .comment-form {
@@ -1028,7 +1028,7 @@ ul.children .single-comment{
 
 /*** CONTACT ***/
 .main-contact {
-   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('./img/contact-hero.jpg') no-repeat center center/cover;
+   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('../img/contact-hero.jpg') no-repeat center center/cover;
 }
 
 .contact a {
