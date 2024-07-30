@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="single-comment">
          <div class="comment-text">
             <div class="user-img">
-               <img src="../img/user.png" alt="User 1" width="100" height="100">
+               <img src="./img/user.png" alt="User 1" width="100" height="100">
             </div>
             <div class="comment">
                <div class="title-date">
